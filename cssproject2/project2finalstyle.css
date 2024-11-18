@@ -73,7 +73,59 @@ section ol li {
   color: #333;
 }
 
-/* Fluid layout for all screen sizes */
+/* Media Query 1: Large Screens */
+@media (min-width: 1024px) {
+  header {
+    padding: 1.5rem; /* Larger padding */
+  }
+
+  nav ul.nav-list li a {
+    font-size: 1.5rem; /* Increase font size */
+  }
+
+  h1 {
+    font-size: 3rem; /* Larger title */
+    margin-top: 2rem;
+  }
+
+  section video {
+    max-width: 1000px; /* Larger video size */
+    margin: 2rem auto;
+  }
+
+  section ol {
+    max-width: 800px; /* Wider ordered list */
+    padding: 2rem; /* Increased padding */
+  }
+}
+
+/* Media Query 2: Medium Screens */
+@media (min-width: 768px) {
+  header {
+    text-align: left; /* Align header to the left */
+    padding: 1rem 2rem;
+  }
+
+  nav ul.nav-list {
+    justify-content: flex-end; /* Right-align navigation */
+  }
+
+  nav ul.nav-list li {
+    margin: 0 2rem; /* Increase spacing */
+  }
+
+  h1 {
+    font-size: 2.2rem; /* Adjust title size */
+    margin-top: 1.5rem;
+  }
+
+  section ol li {
+    font-size: 1.3rem; /* Larger list item font */
+    line-height: 2rem; /* Increase line height */
+  }
+}
+
+/* Media Query 3: Mobile Devices (Default styles apply) */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
