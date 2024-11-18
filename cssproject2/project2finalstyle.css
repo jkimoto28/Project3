@@ -1,0 +1,100 @@
+/* Import fonts for the page */
+body {
+  font-family: 'Poppins', sans-serif; /* Imported font */
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header navigation */
+header {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul.nav-list {
+  list-style: none; /* Remove bullets from navigation */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul.nav-list li {
+  margin: 0 1rem;
+}
+
+nav ul.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem; /* Relative unit for font size */
+}
+
+nav ul.nav-list li a:hover {
+  color: #ff6347;
+}
+
+/* Styling for the page title */
+h1 {
+  font-size: 2.5rem; /* Relative unit */
+  text-align: center;
+  color: #222;
+  margin-top: 1rem;
+}
+
+/* Video section */
+section video {
+  width: 80%; /* Fluid width */
+  max-width: 800px;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+section h2 {
+  font-size: 1.8rem; /* Larger heading */
+  text-align: center;
+}
+
+/* Ordered list of songs */
+section ol {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section ol li {
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+/* Fluid layout for all screen sizes */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  section video {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+header p {
+  font-size: 1rem;
+}
+
+.flower-list {
+  list-style: none;
+  padding: 0;
+}
+
+.flower-list li {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
