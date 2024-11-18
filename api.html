@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Google Maps API with Features</title>
   <link rel="stylesheet" href="cssproject2/reset.css">
   <link rel="stylesheet" href="cssproject2/project2finalstyle.css">
-  <script src="project3script.js"></script>
+  <script src="project3script.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+</head>
+<body>
   <header>
-     <nav class="nav">
+    <nav class="nav">
       <ul class="nav-list">
         <li><a href="resume.html">Resume</a></li>
         <li><a href="index.html">Rap 2024</a></li>
@@ -15,7 +21,9 @@
       </ul>
     </nav>
   </header>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+
+  <div id="map" style="height: 100vh; width: 100%;"></div>
+
   <script>
     let map;
 
@@ -68,8 +76,5 @@
     // Load the map when the window loads
     window.onload = initMap;
   </script>
-</head>
-<body>
-  <div id="map"></div>
 </body>
 </html>
