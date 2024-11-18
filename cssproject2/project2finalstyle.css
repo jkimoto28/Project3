@@ -27,7 +27,7 @@ nav ul.nav-list li {
 
 nav ul.nav-list li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 1.2rem; /* Relative unit for font size */
 }
